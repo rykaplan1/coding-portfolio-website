@@ -10,12 +10,13 @@
 
 body {
   height: 100%;
+  background-color: whitesmoke;
 }
 
 header {
   background-color: var(--header-background-color);
   width: 100%;
-  height: 30%;
+  height: 35%;
 }
 
 nav {
@@ -29,43 +30,47 @@ ul {
   justify-content: space-around;
 }
 
-li {
+nav ul li {
   border-bottom: 5px solid var(--header-accent-color);
   text-align: center;
+  color: var(--header-accent-color);
+  font-size: 1.5rem;
 }
 
 li a {
   text-decoration: none;
-  color: var(--header-accent-color);
-  font-size: 1.5rem;
   padding: 0 5px;
+  color: inherit;
 }
 
 main {
   color: var(--text-color);
-  background-color: whitesmoke;
-  height: 70%;
+  height: 65%;
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  margin-left: 60px;
 }
 
 main section {
-  display: flex;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
+  display: flex;
+  height: 95%;
   color: #223547;
   background-color: var(--header-accent-color);
   font-size: 3rem;
-  padding-left: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
+  padding: 10px;
+  padding-left: 5%;
+  justify-content: right;
 }
 
 h2 {
-  width: 15%;
+  width: 12%;
   font-size: 2.8rem;
   border-right: 5px solid var(--text-color);
   text-align: right;
@@ -83,7 +88,6 @@ h3 {
   margin: 10px;
 }
 
-
 #upper-row {
   display: flex;
   justify-content: space-between;
@@ -100,4 +104,20 @@ h3 {
   background-image: url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
   background-size: cover;
   height: 70%;
+}
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px 0;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+#contact ul li {
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+  text-align: center;
+  font-size: 1.3rem;
 }
