@@ -6,17 +6,18 @@
   --header-background-color: #4C596B;
   --header-accent-color: #27B5E0;
   --text-color: #223547;
+  --project-background-color: #B5DCFB;
 }
 
 body {
-  height: 100%;
   background-color: whitesmoke;
+  height: 100%;
 }
 
 header {
   background-color: var(--header-background-color);
   width: 100%;
-  height: 35%;
+  height: 50%;
 }
 
 nav {
@@ -28,6 +29,7 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav ul li {
@@ -45,17 +47,13 @@ li a {
 
 main {
   color: var(--text-color);
-  height: 65%;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  margin-left: 60px;
 }
 
 main section {
-  margin: 10px 0;
+  margin: 10px;
   display: flex;
-  align-items: center;
 }
 
 h1 {
@@ -67,16 +65,21 @@ h1 {
   padding: 10px;
   padding-left: 5%;
   justify-content: right;
+  align-items: center;
 }
 
 h2 {
+  display: flex;
   width: 12%;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   border-right: 5px solid var(--text-color);
   text-align: right;
-  padding: 10px;
-  margin: 10px;
-  height: 100%;
+  justify-content: right;
+  margin-left: 50px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -88,12 +91,57 @@ h3 {
   margin: 10px;
 }
 
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h4, h5 {
+  padding: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: var(--project-background-color);
+  border: 3px solid var(--header-accent-color);
+  height: 50%;
+  overflow: hidden;
+}
+
+.project-link img {
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in;
+  object-fit: cover;
+}
+
+.project-link img:hover {
+  opacity: 1;
+}
+
+.project-info {
+  color: var(--text-color);
+  background-color: var(--header-accent-color);
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  bottom: 150px;
+}
+
 #upper-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  height: 30%;
+  height: 25%;
 }
 
 #header-image {
@@ -103,16 +151,55 @@ h3 {
   text-align: center;
   background-image: url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
   background-size: cover;
-  height: 70%;
+  height: 75%;
 }
 
 #bio {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 10px 0;
+  margin: 10px;
   align-items: center;
-  font-size: 1.1rem;
+}
+
+#projects {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-project {
+  margin: 10px;
+  margin-bottom: -275px;
+}
+
+#main-project img {
+  height: 100%;
+}
+
+#main-project-info {
+  width: 25%;
+}
+
+#other-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#other-projects .project {
+  margin: 10px;
+  margin-bottom: -260px;
+}
+
+#other-projects .project .project-info {
+  width: 55%;
+}
+
+#contact ul {
+  width: 80%;
 }
 
 #contact ul li {
