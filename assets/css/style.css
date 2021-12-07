@@ -170,7 +170,7 @@ h4, h5 {
 
 #main-project {
   margin: 10px;
-  margin-bottom: -275px;
+  margin-bottom: -300px;
 }
 
 #main-project img {
@@ -182,20 +182,21 @@ h4, h5 {
 }
 
 #other-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
 }
 
 #other-projects .project {
   margin: 10px;
+  width: 48%;
   margin-bottom: -260px;
 }
 
 #other-projects .project .project-info {
-  width: 55%;
+  width: 60%;
 }
 
 #contact ul {
@@ -207,4 +208,24 @@ h4, h5 {
   border-bottom: 3px solid var(--text-color);
   text-align: center;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1269px) {
+  #other-projects .project {
+    width: 47%;
+    margin-bottom: -230px;
+  }
+  #main-project {
+    margin-bottom: -270px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #other-projects .project {
+    margin-bottom: -200px;
+  }
+
+  #main-project {
+    margin-bottom: -240px;
+  }
 }
