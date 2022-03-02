@@ -159,7 +159,7 @@ h6 a:hover {
 
 .project-info {
   position: relative;
-  bottom: 130px;  
+  bottom: 175px;  
   color: var(--text-color);
   background-color: var(--header-accent-color);
   padding: 10px;
@@ -329,6 +329,11 @@ h6 a:hover {
 
   #contact ul li {
     font-size: 0.9rem;
+  }
+
+  #skill-icons i {
+    font-size: 3rem;
+    margin: 10px;
   }
 }
 
